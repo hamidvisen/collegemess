@@ -1,0 +1,253 @@
+/* .master-body{
+    position: absolute;
+    left: 280px;
+    width: 100vw;
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+}  */ 
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#add_btn{
+    
+    
+    
+    line-height: 90px;
+    margin: 0 0 10px 0;
+    float: right;
+    /* border: 2px solid black; */
+}
+
+#table-name{
+  
+    margin-left: 25%;
+  margin-right: auto;
+    width: 50%;
+    align-content: center;
+}
+#edit{
+   
+    
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#delete{
+    
+   
+    
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    
+    display: flex;
+    justify-content: center;;
+   
+}
+th{
+    background-color: rgb(68, 143, 255);
+}
+
+/* #card{
+    object-fit: fill;
+} */
+
+#table{
+    border: 2px solid black;
+    margin-top: 100px;
+    
+}
+
+/* #record-contant{
+margin-top: 20px;
+} */
+/* .fas{
+    font-weight: 20px;
+    display: flex;
+    width:20px;
+    height: 20px;
+} */
+
+/* naya */
+/* @media screen and (max-width: 1175px)  {
+    #add_btn{
+      border: 5px solid black !important; 
+      margin-left: auto !important; */
+      /* height: 100vh; */
+/*     
+     }
+     #add_btn button{
+        border: 5px solid black !important;  */
+        /* height: 100vh; */
+        /* font-size:8px;
+          
+       }
+     
+}  */
+/* purana  */
+/* @media (max-width: 1000px){
+    
+    #table-name{
+        text-align:center ;
+        font-size: 30px;
+        width: 40%;
+    }
+    #add_btn{
+        position:absolute;
+        right: 0;
+         top: 15%;
+         width: 30%;
+         border: 5px solid black; */
+        /*line-height: 90px;
+        margin: 0 0 10px 0;
+        border: 2px solid black;
+        
+        font-size: 10px; */
+    /* }
+    #myTable{
+        overflow-x: auto!important;
+        margin-left: 30px;
+    }
+} */
+/* 
+@media (max-width: 1000px){
+    
+    #table-name{
+        text-align:center ;
+        font-size: 30px;
+        width: 60%;
+    }
+    #add_btn{
+        position:absolute;
+        right: 0;
+         top: 15%;
+         width: 30%;
+       line-height: 90px;
+        margin: 0 0 10px 0;
+        border: 2px solid black;
+        
+        height: 15%;
+        font-size: 10px;
+    }
+    #myTable{
+        overflow-x: auto!important;
+        margin-left: 30px;
+    }
+} */
+/* @media (max-width: 500px){
+    h1{
+        width: 30%;
+        font-size: 20px;
+    }
+    #table-name{
+        text-align:center ;
+        font-size: 20px;
+    }
+    #add_btn{
+        position:absolute;
+        right: 0;
+        top: 12%;
+        line-height: 90px;
+        margin: 0 0 10px 0;
+        border: 2px solid black;
+    }
+} */
+
+/* @media (max-width: 300px){
+    h1{
+        width: 30%;
+        font-size: 20px;
+    }
+    #table-name{
+        text-align:center ;
+        font-size: 20px;
+    }
+    #add_btn{
+        position:absolute;
+        right: 0;
+        top: 12%;
+        line-height: 90px;
+        margin: 0 0 10px 0; 
+         border: 2px solid black;
+    }
+} */
+/* Neha ka  */
+/* @media (max-width: 700px){
+    
+    #table-name{
+        text-align:center ;
+        font-size: 30px;
+        width: 40%;
+       
+
+    }
+    #add_btn{
+        position:absolute;
+        right: 0;
+         top: 15%;
+         width: 30%;
+         height: 10vh; */
+        /*line-height: 90px;
+        margin: 0 0 10px 0;
+        border: 2px solid black;
+        
+        font-size: 10px; */
+    /* }
+
+    
+} */
+/* 
+@media (min-height: 700px){
+    .table-responsive{
+        
+    width: 768px;
+    min-width: 100%;
+    height: 80vh;
+    }
+    b{
+        
+        width: 768px;
+        max-width: 100%;
+        min-height: 80vh;
+        }
+ }  */
+
+   
+ /* @media screen and (max-width: 1170px){
+    
+    #table{ */
+        /* text-align:center ;
+        font-size: 30px;
+        width: 40%;
+         */
+        /* height: 10px;
+        width: 2px;
+    }} */
+
+    /* @media  screen and (max-width:1000px){
+
+        html{
+            font-size:11px;
+            
+        }
+     }
+        
+     @media screen and (max-width:1200px){
+        #add_btn{ */
+            /* display: flex;
+           flex-direction:end ; */
+            /* height: 40px;
+            width: 100px;
+            font-size: 2px;
+        }
+    } */

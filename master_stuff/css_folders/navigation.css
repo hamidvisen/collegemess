@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+ body{
+    background: #dfe9fe;
+}
+
+
+/* .select-menu{
+    width: 380px;
+    margin: 150px auto;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400px;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0 0 0 0.1);
+
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0 0 0 0.1);
+    display:none;
+
+}
+.select-menu.active .options{
+    display:block;
+
+}
+
+.options .option{
+
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+font-size: 25px;
+margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+} */
+
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height:100%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0 0 0 0.1);
+    /* width: 250px; */
+    z-index:1;
+}
+
+#logo{
+    text-align: center;
+    display: flex;
+   flex-direction: row;
+    transition: all 0.5 ease;
+    margin: 10px 0 0 4px;
+}
+#logo img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+  
+}
+#logo_span1{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+#logo_span2{
+    font-size: 80%;
+    font-weight: bold;
+    padding-left: 30px;
+    
+    text-transform: uppercase;
+}
+.logo-span-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+a{
+    position: relative;
+    color: rgba(85 83 83);
+    font-size:14px;
+    display: table;
+    width: 250px;
+    padding: 10px;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+
+}
+.active, a:hover{
+    background: #eee;
+    /* border: 2px solid black; */
+    color: rgb(255, 218, 7);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-right: 2px;
+}
+nav:hover{
+    width: 250px;
+    transition: all 0.5s ease;
+    
+    
+
+}
+
+    
+
+#logout{
+    position: relative;
+    bottom: 0;
+   
+} 

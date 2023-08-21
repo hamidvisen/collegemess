@@ -1,0 +1,28 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#table{
+    border: 2px solid  rgb(68, 143, 255);
+    margin-top: 60px;
+    
+}
+
+.inputbar {
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 30px;
+    
+}
+
+#submit {
+    margin-left: 50px;
+}
+
+.radiobutton {
+    margin-left: 20px;
+}
+
+thead{
+    background-color: blue;
+}
