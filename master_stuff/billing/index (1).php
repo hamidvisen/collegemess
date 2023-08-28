@@ -529,6 +529,23 @@ include("db.php");
          return false;
       }
 
+      
+      var transaction_id = $("#payment_mode_input").val();
+      var mode = "";
+      var order = "Order No: " + bill;
+      $('#order').html(order);
+      if (e.value == 'online') {
+         mode = "online";
+         if (transaction_id.trim() == '') {
+            $('#payment_mode_input').append('<style>#payment_mode_input::placeholder{color:red; text-transform: uppercase;}</style>');
+            return;
+         }
+
+      } else {
+         mode = "cash";
+      }
+
+      var gross_arr = $('#totalPayment').text();
 
       if (localStorage.getItem('lastDate') != date.getDate()) {
 
@@ -573,22 +590,6 @@ include("db.php");
 
 
 
-      var transaction_id = $("#payment_mode_input").val();
-      var mode = "";
-      var order = "Order No: " + bill;
-      $('#order').html(order);
-      if (e.value == 'online') {
-         mode = "online";
-         if (transaction_id.trim() == '') {
-            $('#payment_mode_input').append('<style>#payment_mode_input::placeholder{color:red; text-transform: uppercase;}</style>');
-            return false;
-         }
-
-      } else {
-         mode = "cash";
-      }
-
-      var gross_arr = $('#totalPayment').text();
 
 
       $.ajax({
@@ -611,6 +612,7 @@ include("db.php");
          },
 
          success: function() {
+         
 
             Swal.fire({
                //   position: 'top-end',
@@ -672,12 +674,20 @@ include("db.php");
          return false;
       } else {
 
-         $('#total' + id).text((update_quantity_name * parseInt($('#price' + id).text()))).wrapInner("<strong />");;
+         $('#total' + id).text((update_quantity_name * parseInt($('#price' + id).text()))).wrapInner("<strong />");
+         //new
+        qty_arr.splice([(id-1), 1, update_quantity_name]);
+        total_arr.splice([(id-1), 1, update_quantity_name]);
 
+//
 
 
          $('#total').val(parseInt(update_quantity_name * parseInt($('#price' + id).text())));
          $('#num' + id).html(update_quantity_name);
+         //new 
+         total_arr.splice([(id-1), 1, parseInt(update_quantity_name * parseInt($('#price' + id).text()))]);
+
+         //
 
 
 
@@ -695,6 +705,8 @@ include("db.php");
 
          var totalPayment = parseFloat(total);
          $('#totalPayment').text(totalPayment.toFixed(2));
+         gross_arr = totalPayment.toFixed(2);
+
 
          $('#update_master_modal').modal('hide');
 
@@ -715,6 +727,15 @@ include("db.php");
       let value = String($('#' + id + ' td:first-child').text());
 
       var index = check_arr.indexOf(value);
+      // new changes
+     var productIndex =  product_name_arr.indexOf(value);
+
+     product_name_arr.splice(productIndex, 1);
+     category_arr.splice(productIndex, 1);
+               qty_arr.splice(productIndex, 1);
+               total_arr.splice(productIndex, 1);
+
+     //upto it
 
       check_arr.splice(index, 1);
       $('#' + id).remove();
