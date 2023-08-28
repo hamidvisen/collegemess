@@ -676,8 +676,10 @@ include("db.php");
 
          $('#total' + id).text((update_quantity_name * parseInt($('#price' + id).text()))).wrapInner("<strong />");
          //new
-        qty_arr.splice([(id-1), 1, update_quantity_name]);
-        total_arr.splice([(id-1), 1, update_quantity_name]);
+       
+        qty_arr.splice((id-1), 1, update_quantity_name);
+       
+        total_arr.splice((id-1), 1, update_quantity_name);
 
 //
 
@@ -685,7 +687,7 @@ include("db.php");
          $('#total').val(parseInt(update_quantity_name * parseInt($('#price' + id).text())));
          $('#num' + id).html(update_quantity_name);
          //new 
-         total_arr.splice([(id-1), 1, parseInt(update_quantity_name * parseInt($('#price' + id).text()))]);
+         total_arr.splice((id-1), 1, parseInt(update_quantity_name * parseInt($('#price' + id).text())));
 
          //
 
