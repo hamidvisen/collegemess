@@ -8,6 +8,7 @@
     <title>Receipt Sample</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- sample comment -->
 
 <body>
 
